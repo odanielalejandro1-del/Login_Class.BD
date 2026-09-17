@@ -1,18 +1,27 @@
+import { Link } from "expo-router";
 import { StyleSheet, Text, View } from "react-native";
 
 export default function app() {
   return (
     <View style={style.container}>
-      <Text style={style.Text}>ASISTENCIA DE DOCENTES DE LA UNICARIBE</Text>
+      <Text style={style.text}>Daniel Ochoa</Text>
+      <Link href="/about" style={style.button}>
+        Go to About Us
+      </Link>
     </View>
   );
 }
 const style = StyleSheet.create({
+  button: {
+    fontSize: 18,
+    color: "#fff",
+    backgroundColor: "#5c5959",
+  },
   container: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#12c1c9",
+    backgroundColor: "#7dc0c0",
   },
   text: {
     color: "#fff",
